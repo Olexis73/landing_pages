@@ -3,12 +3,12 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     min-width: 720px;
     margin: 0;
     padding: 0;
     font-size: 0;
-}
+} */
 
 .wrapper {
     width: 720px;
@@ -113,7 +113,7 @@ body {
     width: 219px;
     height: 14px;
     color: rgba(25,25,25, 0.9);
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 900;
     line-height: 14px;
     text-transform: uppercase;
@@ -130,8 +130,12 @@ body {
     line-height: 8px;
     text-transform: uppercase;
     letter-spacing: 0.54px;
-    padding-bottom: 75px;
+    padding-bottom: 50px;
     margin: 8px auto;
+}
+
+.about_container {
+   margin-top: 25px;
 }
 
 .img_work_place {
@@ -140,6 +144,7 @@ body {
     display: inline-block;
     vertical-align: top;
     position: relative;
+    
 
     
 }
@@ -194,22 +199,93 @@ p {
 }
 
 .tyc {
-    width:5px;
-    height: 5px;
+    width:6px;
+    height: 6px;
     border-radius: 1.5px;
     background-color: #d0d0d0;
     display: inline-block; 
-    margin-right: 1px;
+    margin-right: -1px;
 }  
 
 .slide {
     margin: 20px 30px 25px -260px;
-    vertical-align: bottom;
+    vertical-align: middle;
     display: inline-block;
-    width: 48px;
+    width: 42px;
     height: 10px;
 }
 
 .tyc:hover {
     background:  #b3f2ee;
 }
+
+.future {
+    background: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 62px;
+}
+
+.future_container {
+    width: 100%;
+    /* height: 180px; */
+}
+
+.future_item img {
+    width: 160px;
+}
+
+.future_line {
+    display: inline-block;    
+    vertical-align: middle;
+    text-align: center;
+    height: 160px;
+}    
+    
+.future_item  {
+    display: inline-block;
+    margin-left: 3.5px;
+    padding-top: 7px;  
+}
+
+.services {
+    background: #f8fafa;
+    padding-top: 50px;
+    padding-bottom: 62px;
+}
+
+.services_container {
+    margin-top: 4px;
+}
+
+.services_line {
+    font-size: 0;
+}
+
+.services_item {
+    display: inline-block;
+    vertical-align: top;
+    background: #6df6eb;
+    width: calc(60% - 3.5px);
+    height: 211px;
+    padding-top: calc((60% - 3.5px)/1.545);
+}
+
+.services_item + .services_item {
+    margin-left: 7px;
+    width: calc(40% - 3.5px);
+    padding-top: calc(40% - 3.5px);
+}
+
+.services_item_3 {
+    display: inline-block;
+    vertical-align: top;
+    background: #6df6eb;
+    width: calc(40% - 3.5px);
+    height: 211px;
+    padding-top: calc((60% - 3.5px)/1.545);
+}
+
+.services_item_3 + .services_item_3 {
+    margin-left: 7px;
+    width: calc(60% - 3.5px);
+    padding-top: calc(40% - 3.5px);
