@@ -96,11 +96,10 @@
     padding: 20px 50px;
 }
 
-
 .about {
     background: #f8fafa;
     padding-top: 130px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     padding-left: 150px;
     padding-right: 150px;
 }
@@ -114,7 +113,6 @@
     text-transform: uppercase;
     letter-spacing: 2.28px;
     margin: 0 auto;
-
 }   
     
 .hat_text {
@@ -193,9 +191,10 @@
     line-height: 28px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
+    padding-top: 20px;
 }
 
-.work{
+.work {
     color: rgba(25,25,25, 0.75);
     font-family: 'Raleway';
     font-size: 16px;
@@ -203,6 +202,7 @@
     line-height: 28px;
     letter-spacing: 0.8px;
     text-align: justify;
+    padding: 20px 0;
 }
 
 .future {
@@ -835,7 +835,7 @@
     background: url('../images/star.svg') center no-repeat /16px;
     width: 16px;
     height: 16px;
-    margin: 0 2px;
+    margin: 0 1px;
 }
 
 .list_logo {
@@ -859,7 +859,7 @@
     padding-top: -120px;
     background: url('../images/christmas_snow_trees-wide.png') center no-repeat /110% auto;
     /* border: 1px solid black; */
-    opacity: 0.3;
+    opacity: 0.4;
     position: absolute;
     z-index: 0;
 }
@@ -867,7 +867,7 @@
 
 .forms {
     width: 100%;
-    height: 1020px;
+    height: 705px;
     /* position: relative; */
     z-index: 1;
 }
@@ -875,16 +875,19 @@
 .connects {
     width: 100%;
     height: 460px;
-    padding: 120px 150px;
-    /* top: 12%; */
+    padding: 0 150px;
+    top: 12%;
     position: relative;
-    /* display: inline-block;  */
     margin-top: 120px;
+    
 }
 
 .form_box {
     width: 100%;
-    height: inherit;
+    height: 460px;
+    padding: 0 15px;
+    /* background: rgba(74, 89, 98, 0.2);  */
+    background: rgba(74, 89, 98, 0.7);
     /* border: 1px solid red; */
 
 }
@@ -894,9 +897,7 @@
     vertical-align: middle;
     width: calc(55% - 25px);
     height: 460px;
-    background: rgba(74, 89, 98, 0.9);
-   
-   
+    background: rgba(74, 89, 98, 0.5);
 }
 
 .map_box {
@@ -904,9 +905,8 @@
     vertical-align: middle;
     width: calc(45% - 25px);
     height: inherit;
-    background: rgba(74, 89, 98, 0.9);
+    background: rgba(74, 89, 98, 0.8);
     margin-left: 25px;
-
     position: relative;
 }
 
@@ -930,27 +930,26 @@
 }
 
 .form { 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat';
     font-size:18px;
     font-weight: 300;
     color:#fff;
-    /* display: inline-block; */
-    /* overflow: hidden; */
+    /* display: inline-block;  */
+    overflow: hidden;
+    position: relative;
 }
 
-input {
+.form_box input {
     width: 100%;
     height: 60px;
-    border: 1px solid rgba(255,255,255,.4);
-    border-radius: 4px;
-    display:block;
-    font-family: 'Open Sans', sans-serif;
-    font-size:18px;
+    border: 0;
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 18px;
     font-weight: 300;    
     color:#fff;
-    padding-left:30px;
-    padding-right:30px;
-    border-bottom: 2px solid rgba(40, 47, 51, 0.9);
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 input[type=submit] {
@@ -958,56 +957,61 @@ input[type=submit] {
 }
 
 input.name {
-    background: rgba(74, 89, 98, 0.5); 
+    background: rgba(74, 89, 98, 0.0); 
     padding-left:25px;
+    border-bottom: 2px solid rgba(40, 47, 51, 0.9);
 }
 
 input.subject {
-    background: rgba(74, 89, 98, 0.5);
+    background: rgba(74, 89, 98, 0.0);
     padding-left:25px;
+    border-bottom: 2px solid rgba(40, 47, 51, 0.9);
 }
 
 input.email {
-    background: rgba(74, 89, 98, 0.5);
+    background: rgba(74, 89, 98, 0.0);
     padding-left:25px;
 }
 
 input.message {
-    background: rgba(74, 89, 98, 0.5);
+    background: rgba(74, 89, 98, 0.0);
     padding-left:25px;
+    border-bottom: 2px solid rgba(40, 47, 51, 0.9);
 }
 
-:input-placeholder {  
-    color: rgb(204, 197, 197); 
-}
+
+   
+
+::-webkit-input-placeholder {
+    color:rgba(255, 255, 255, 0.7);
+} 
+
 input:focus, textarea:focus { 
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    background-color: rgba(167, 167, 167, 0.5);
+    /* box-shadow: 0 0 5px 1px rgba(255,255,255,.5); */
     overflow: hidden; 
 }
-/* Стили для кнопки отправить */
-.btn {
+ 
+input.btn {
     width: 244px;
     height: 53px;
     border-radius: 3px;
-    bottom: -90px;
-    left: 190px;
-
-    border: 1px solid #253737;
-    background: #6eeee4;
-    background-image: #cdfffb;
-    position: absolute;
+    margin-left: 30px;
+    border: 1px solid rgba(74, 89, 98, 0.2);
+    background: #9fe2dd;
+    /* position: absolute; */
+    /* position: relative; */
     color: #000000;
 }
 
 textarea {
-    background: rgba(74, 89, 98, 0.5); 
+    background: rgba(74, 89, 98, 0.0); 
     width: 100%;
     height: 110px;
-    /* border: 1px solid rgba(255,255,255,.6); */
-    /* background-clip: padding-box;  */
-    display:block;
-    font-family: 'Open Sans', sans-serif;
+    border: 0;
+    background-clip: padding-box; 
+    display: block;
+    font-family: 'Montserrat';
     font-size: 24px;
     font-weight: 300;
     color:#fff;
@@ -1015,23 +1019,22 @@ textarea {
     padding-right: 20px;
     padding-top: 150px;
     margin-bottom: 20px;
-    overflow:hidden;  
+    overflow:hidden;
+    border-bottom: 2px solid rgba(40, 47, 51, 0.9);  
     vertical-align: text-top;
 }
 
 .btn:hover {
-    border: 1px solid #253737;
-    text-shadow: #333333 0 1px 0;
-    background: #b3bebe;
+    border: 1px solid #6fb3b3;
+    background: #6fb3b3;
     background: linear-gradient(top, #77b2b0, #416b68);
     color: #fff;
  }
 .btn:active {
-    margin-top:1px;
-    text-shadow: #333333 0 -1px 0;
-    border: 1px solid #333333;
-    background: #ffCC00;
-    background: linear-gradient(top, #ffcc00, #ff6600);
+    margin-top: 1px;
+    border: 1px solid #406697;
+    background: rgb(235, 83, 83);
+    background: linear-gradient(top, #0051ff, #00ff15);
     color: #fff;
     outline: none;
 }
@@ -1040,9 +1043,77 @@ textarea {
 .social {
     width: 1440px;
     height: 300px;
+    padding: 0 calc((100% - 500px)/2);
+    padding-top: 50px;
     background: rgba(38, 43, 46, 0.9);
-    margin: 245px 0;
+    border: 1px solid rgba(38, 43, 46, 0.9);
+}
 
+.social_content {
+    width: 250px;
+    height: 40px;
+    margin: 0 calc((100% - 260px)/2);
+    margin-top: 20px;    
 
 }
 
+.soc_logo {
+    height: 40px;
+    width: calc(100%/4 - 21px);
+    display: inline-block;
+    vertical-align: middle;
+    /* border: 1px solid white; */
+   
+}
+
+.pint {
+    background: rgba(88, 89, 91, 0.95) url('../images/icon_1g.svg') center no-repeat /contain;
+}
+
+.twit {
+    background: rgba(88, 89, 91, 0.95) url('../images/icon_2g.svg') center no-repeat /contain;
+}
+
+.fb {
+    background: rgba(88, 89, 91, 0.95) url('../images/icon_3g.svg') center no-repeat /contain;
+}
+
+.ball {
+    background: rgba(88, 89, 91, 0.95) url('../images/icon_4g.svg') center no-repeat /contain;
+}
+
+.pint:hover {
+    background:  url('../images/icon_1.svg') center no-repeat /cover;
+}
+
+.twit:hover {
+    background:  url('../images/icon_2.svg') center no-repeat /cover;
+}
+
+.fb:hover {
+    background:  url('../images/icon_3.svg') center no-repeat /cover;
+}
+
+.ball:hover {
+    background:  url('../images/icon_4.svg') center no-repeat /cover;
+}
+
+.social:nth-child(2n-1) > p  {
+    color:rgba(255, 255, 255, 0.8);
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.16px;
+    margin: 35px 0 10px 0;
+}
+
+.social:nth-child(even) > p {
+    color:rgba(255, 255, 255, 0.8);
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0.16px;
+}
